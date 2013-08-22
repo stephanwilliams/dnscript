@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'dnscript' target in the 'dnscript' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

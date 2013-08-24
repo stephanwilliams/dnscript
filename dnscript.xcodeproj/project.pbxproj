@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		CE5B560F17C6ED03004879D1 /* NotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5B560E17C6ED03004879D1 /* NotificationHandler.m */; };
+		CE61CD7517C8A84E003EB997 /* com.github.stephanwilliams.dnscript.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEE00E8917C598C20014713B /* com.github.stephanwilliams.dnscript.plist */; };
 		CEE00E7C17C595CC0014713B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE00E7B17C595CC0014713B /* Foundation.framework */; };
 		CEE00E7F17C595CC0014713B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE00E7E17C595CC0014713B /* main.m */; };
 		CEE00E8317C595CC0014713B /* dnscript.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEE00E8217C595CC0014713B /* dnscript.1 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		CE61CD7417C8A7D2003EB997 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /Library/LaunchAgents/;
+			dstSubfolderSpec = 0;
+			files = (
+				CE61CD7517C8A84E003EB997 /* com.github.stephanwilliams.dnscript.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		CEE00E7617C595CC0014713B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,10 +88,10 @@
 		CEE00E7D17C595CC0014713B /* dnscript */ = {
 			isa = PBXGroup;
 			children = (
+				CEE00E8917C598C20014713B /* com.github.stephanwilliams.dnscript.plist */,
 				CEE00E7E17C595CC0014713B /* main.m */,
 				CEE00E8217C595CC0014713B /* dnscript.1 */,
 				CEE00E8017C595CC0014713B /* Supporting Files */,
-				CEE00E8917C598C20014713B /* com.github.stephanwilliams.dnscript.plist */,
 				CE5B560D17C6ED03004879D1 /* NotificationHandler.h */,
 				CE5B560E17C6ED03004879D1 /* NotificationHandler.m */,
 			);
@@ -105,6 +116,8 @@
 				CEE00E7417C595CC0014713B /* Sources */,
 				CEE00E7517C595CC0014713B /* Frameworks */,
 				CEE00E7617C595CC0014713B /* CopyFiles */,
+				CE61CD7417C8A7D2003EB997 /* CopyFiles */,
+				CE61CD7617C8ABAC003EB997 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -140,6 +153,22 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE61CD7617C8ABAC003EB997 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "pkgbuild --analyze --root \"${DSTROOT}\" \"${PRODUCT_NAME}.plist\"\npkgbuild --root \"${DSTROOT}\" --component-plist \"${PRODUCT_NAME}.plist\" --identifier \"com.github.stephanwilliams.${PRODUCT_NAME}\" --install-location \"/\" \"${PRODUCT_NAME}.pkg\"\nrm \"${PRODUCT_NAME}.plist\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEE00E7417C595CC0014713B /* Sources */ = {

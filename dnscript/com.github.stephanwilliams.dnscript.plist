@@ -5,6 +5,10 @@
 	<key>Label</key>
 	<string>com.github.stephanwilliams.dnscript</string>
 	<key>Program</key>
-	<string>dnscript</string>
+	<string>/usr/local/bin/dnscript</string>
+	<key>KeepAlive</key>
+	<true/>
+	<key>RunAtLoad</key>
+	<true/>
 </dict>
 </plist>

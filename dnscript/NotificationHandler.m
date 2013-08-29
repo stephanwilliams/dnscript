@@ -100,11 +100,9 @@
         unichar curr = [line characterAtIndex:0];
         switch (curr) {
             case '#':
-                NSLog(@"processed comment");
                 break;
             case ';':
                 if (prev != ';') {
-                    NSLog(@"new block");
                     [self addScripts:tempScripts forNotifications:tempNotification];
                     [tempNotification removeAllObjects];
                     [tempScripts removeAllObjects];
@@ -112,14 +110,13 @@
                 [tempNotification addObject:[line substringFromIndex:1]];
                 break;
             default:
-                NSLog(@"added script");
                 [tempScripts addObject:line];
                 break;
         }
         prev = curr;
     }
     [self addScripts:tempScripts forNotifications:tempNotification];
-    NSLog(@"%@", _scriptMap);
+//    NSLog(@"%@", _scriptMap);
     _configLoadSuccess = YES;
 }
 

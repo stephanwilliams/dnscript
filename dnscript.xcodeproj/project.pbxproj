@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE583A5717CE65CD009F99F9 /* ConfigChangeMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE583A5617CE65CD009F99F9 /* ConfigChangeMonitor.m */; };
 		CE5B560F17C6ED03004879D1 /* NotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5B560E17C6ED03004879D1 /* NotificationHandler.m */; };
 		CE61CD7517C8A84E003EB997 /* com.github.stephanwilliams.dnscript.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEE00E8917C598C20014713B /* com.github.stephanwilliams.dnscript.plist */; };
 		CEE00E7C17C595CC0014713B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE00E7B17C595CC0014713B /* Foundation.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE583A5517CE65CD009F99F9 /* ConfigChangeMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigChangeMonitor.h; sourceTree = "<group>"; };
+		CE583A5617CE65CD009F99F9 /* ConfigChangeMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigChangeMonitor.m; sourceTree = "<group>"; };
 		CE5B560D17C6ED03004879D1 /* NotificationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHandler.h; sourceTree = "<group>"; };
 		CE5B560E17C6ED03004879D1 /* NotificationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationHandler.m; sourceTree = "<group>"; };
 		CEE00E7817C595CC0014713B /* dnscript */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dnscript; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +66,8 @@
 		CEE00E6F17C595CC0014713B = {
 			isa = PBXGroup;
 			children = (
+				CE583A5517CE65CD009F99F9 /* ConfigChangeMonitor.h */,
+				CE583A5617CE65CD009F99F9 /* ConfigChangeMonitor.m */,
 				CEE00E7D17C595CC0014713B /* dnscript */,
 				CEE00E7A17C595CC0014713B /* Frameworks */,
 				CEE00E7917C595CC0014713B /* Products */,
@@ -177,6 +182,7 @@
 			files = (
 				CEE00E7F17C595CC0014713B /* main.m in Sources */,
 				CE5B560F17C6ED03004879D1 /* NotificationHandler.m in Sources */,
+				CE583A5717CE65CD009F99F9 /* ConfigChangeMonitor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

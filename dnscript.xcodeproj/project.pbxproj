@@ -12,7 +12,6 @@
 		CE61CD7517C8A84E003EB997 /* com.github.stephanwilliams.dnscript.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEE00E8917C598C20014713B /* com.github.stephanwilliams.dnscript.plist */; };
 		CEE00E7C17C595CC0014713B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE00E7B17C595CC0014713B /* Foundation.framework */; };
 		CEE00E7F17C595CC0014713B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE00E7E17C595CC0014713B /* main.m */; };
-		CEE00E8317C595CC0014713B /* dnscript.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEE00E8217C595CC0014713B /* dnscript.1 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,19 +25,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		CEE00E7617C595CC0014713B /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-				CEE00E8317C595CC0014713B /* dnscript.1 in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE13D22F18027448001E8E1E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		CE13D23318028C64001E8E1E /* musicinfo.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = musicinfo.scpt; sourceTree = "<group>"; };
+		CE13D23418028C64001E8E1E /* refreshall.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = refreshall.scpt; sourceTree = "<group>"; };
 		CE583A5517CE65CD009F99F9 /* ConfigChangeMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigChangeMonitor.h; sourceTree = "<group>"; };
 		CE583A5617CE65CD009F99F9 /* ConfigChangeMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigChangeMonitor.m; sourceTree = "<group>"; };
 		CE5B560D17C6ED03004879D1 /* NotificationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHandler.h; sourceTree = "<group>"; };
@@ -47,7 +39,6 @@
 		CEE00E7B17C595CC0014713B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEE00E7E17C595CC0014713B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEE00E8117C595CC0014713B /* dnscript-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dnscript-Prefix.pch"; sourceTree = "<group>"; };
-		CEE00E8217C595CC0014713B /* dnscript.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = dnscript.1; sourceTree = "<group>"; };
 		CEE00E8917C598C20014713B /* com.github.stephanwilliams.dnscript.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.github.stephanwilliams.dnscript.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,9 +54,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE13D23218028C64001E8E1E /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				CE13D23318028C64001E8E1E /* musicinfo.scpt */,
+				CE13D23418028C64001E8E1E /* refreshall.scpt */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
 		CEE00E6F17C595CC0014713B = {
 			isa = PBXGroup;
 			children = (
+				CE13D23218028C64001E8E1E /* scripts */,
+				CE13D22F18027448001E8E1E /* README.md */,
 				CE583A5517CE65CD009F99F9 /* ConfigChangeMonitor.h */,
 				CE583A5617CE65CD009F99F9 /* ConfigChangeMonitor.m */,
 				CEE00E7D17C595CC0014713B /* dnscript */,
@@ -95,7 +97,6 @@
 			children = (
 				CEE00E8917C598C20014713B /* com.github.stephanwilliams.dnscript.plist */,
 				CEE00E7E17C595CC0014713B /* main.m */,
-				CEE00E8217C595CC0014713B /* dnscript.1 */,
 				CEE00E8017C595CC0014713B /* Supporting Files */,
 				CE5B560D17C6ED03004879D1 /* NotificationHandler.h */,
 				CE5B560E17C6ED03004879D1 /* NotificationHandler.m */,
@@ -120,7 +121,6 @@
 			buildPhases = (
 				CEE00E7417C595CC0014713B /* Sources */,
 				CEE00E7517C595CC0014713B /* Frameworks */,
-				CEE00E7617C595CC0014713B /* CopyFiles */,
 				CE61CD7417C8A7D2003EB997 /* CopyFiles */,
 				CE61CD7617C8ABAC003EB997 /* ShellScript */,
 			);
@@ -216,7 +216,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -243,7 +243,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
 			};
 			name = Release;

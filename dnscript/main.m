@@ -1,11 +1,3 @@
-//
-//  main.m
-//  dnscript
-//
-//  Created by Stephan Williams on 8/21/13.
-//  Copyright (c) 2013 Stephan Williams. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 #import "NotificationHandler.h"
 #import "ConfigChangeMonitor.h"

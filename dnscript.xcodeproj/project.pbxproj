@@ -31,6 +31,7 @@
 		CE13D22F18027448001E8E1E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		CE13D23318028C64001E8E1E /* musicinfo.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = musicinfo.scpt; sourceTree = "<group>"; };
 		CE13D23418028C64001E8E1E /* refreshall.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = refreshall.scpt; sourceTree = "<group>"; };
+		CE182C9C18598370002A68EC /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		CE583A5517CE65CD009F99F9 /* ConfigChangeMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigChangeMonitor.h; sourceTree = "<group>"; };
 		CE583A5617CE65CD009F99F9 /* ConfigChangeMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigChangeMonitor.m; sourceTree = "<group>"; };
 		CE5B560D17C6ED03004879D1 /* NotificationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHandler.h; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 		CEE00E6F17C595CC0014713B = {
 			isa = PBXGroup;
 			children = (
+				CE182C9C18598370002A68EC /* LICENSE */,
 				CE13D23218028C64001E8E1E /* scripts */,
 				CE13D22F18027448001E8E1E /* README.md */,
 				CE583A5517CE65CD009F99F9 /* ConfigChangeMonitor.h */,

@@ -1,11 +1,3 @@
-//
-//  ConfigChangeMonitor.m
-//  dnscript
-//
-//  Created by Stephan Williams on 8/28/13.
-//  Copyright (c) 2013 Stephan Williams. All rights reserved.
-//
-
 #import "ConfigChangeMonitor.h"
 
 @implementation ConfigChangeMonitor

@@ -1,11 +1,3 @@
-//
-//  ConfigChangeMonitor.h
-//  dnscript
-//
-//  Created by Stephan Williams on 8/28/13.
-//  Copyright (c) 2013 Stephan Williams. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 #import <sys/event.h>
 #import <fcntl.h>

@@ -1,0 +1,1 @@
+Application("GeekTool Helper").refreshAll();
